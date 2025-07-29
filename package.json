@@ -1,0 +1,22 @@
+{
+  "name": "proyecto_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "cucumber-js --timeout 15000",
+    "test": "cucumber-js",
+    "report": "node report.js",
+    "test:full": "npm run test && npm run report"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.14",
+    "cucumber-html-reporter": "^7.2.0"
+  }
+}
